@@ -5,7 +5,7 @@ Use Tabula (http://tabula.technology/) to generate a non standard CSV format.
 
 ### Prerequisites
 
-- Version of Ruby or higher used:
+- Check Ruby's version:
 
 ```
 ruby 2.3.1
@@ -37,7 +37,7 @@ ruby pdf_to_csv.rb
 
 ## Running the tests
 
-- This application was build using TDD techniques.
+- Use TDD (Test Driven Development) approach.
 - 16 examples to test main flow of the application.
 - All methods are testable.
 
@@ -50,11 +50,11 @@ rspec spec/pdf_to_csv_test.rb
 
 ## Authors
 
-* **Yanny Castrillon** - *Initial work* - [yannycastrillon](https://github.com/yannycastrillon)
+* **Yanny Castrillon** - *My work* - [yannycastrillon](https://github.com/yannycastrillon)
 
 ## Github
 
-* I used git and Github as a Control versioning system.
+* Managed Git and Github as a Control versioning system.
 * Check the code's repository on: [Project Repository](https://github.com/yannycastrillon/pdf_to_csv)
 ## License
 

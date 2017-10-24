@@ -76,14 +76,14 @@ class PDFToCSV
       csv << HEADERS_COLUMNS
       data_arr.each{ |row| csv << row }
     end
-    File.write('formatted_data.csv', s)
+    File.write('./data/formatted_data.csv', s)
     @@file.close
   end
 end
 
 # Object of the class PDFToCSV and initializer
 # - "arr_headers_line_csv" and "arr_age_rate_line_csv"
-obj = PDFToCSV.new("./tabula-aeta_sample_p1.csv")
+obj = PDFToCSV.new("./data/tabula-aeta_sample_p1.csv")
 
 arr_headers_line_csv = obj.arr_headers_line_csv
 formated_headers = obj.format_array(arr_headers_line_csv)

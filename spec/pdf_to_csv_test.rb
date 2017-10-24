@@ -3,7 +3,7 @@ require './pdf_to_csv'
 
 describe 'Test process to format an unformated CSV file into a formatted CSV file' do
   before :each do
-    @file_name = './tabula-aeta_sample_p1.csv'
+    @file_name = './data/tabula-aeta_sample_p1.csv'
     @pdf_to_csv = PDFToCSV.new(@file_name)
   end
 
@@ -17,7 +17,7 @@ describe 'Test process to format an unformated CSV file into a formatted CSV fil
       end
 
       it 'should open file' do
-        expect(@file_name).to eq('./tabula-aeta_sample_p1.csv')
+        expect(@file_name).to eq('./data/tabula-aeta_sample_p1.csv')
         allow(File).to receive(:open).with(@file_name)
       end
 
@@ -105,8 +105,8 @@ describe 'Test process to format an unformated CSV file into a formatted CSV fil
       end
     end
     context 'when is call by the class instance ' do
-      let(:file_name) { 'formatted_data.csv' }
-      let(:file) { File.open('./tabula-aeta_sample_p1.csv')}
+      let(:file_name) { './data/formatted_data.csv' }
+      let(:file) { File.open('./data/tabula-aeta_sample_p1.csv')}
       it 'should receive only one argument ' do
         expect(@pdf_to_csv).to respond_to(:export_data_arr_to_csv).with(1).argument
       end

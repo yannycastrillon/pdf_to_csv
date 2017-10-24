@@ -17,7 +17,7 @@ ruby 2.3.1
 tabula-aeta_sample_p1.csv
 ```
 
-![](unformatted_csv.png)
+![](images/unformatted_csv.png)
 
 ### Installing
 
@@ -33,7 +33,7 @@ bundle install
 ruby pdf_to_csv.rb
 ```
 
-![](Execution_pdf_to_csv.png)
+![](images/execution_pdf_to_csv.png)
 
 ## Running the tests
 
@@ -46,7 +46,7 @@ ruby pdf_to_csv.rb
 rspec spec/pdf_to_csv_test.rb
 ```
 
-![](rspec_test_pdf_to_csv.png)
+![](images/rspec_test_pdf_to_csv.png)
 
 ## Authors
 

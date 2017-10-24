@@ -20,7 +20,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rspec (~> 3.0)
+  rspec
   rspec-mocks
 
 BUNDLED WITH

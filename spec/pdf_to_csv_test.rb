@@ -92,13 +92,13 @@ describe 'Test process to format an unformated CSV file into a formatted CSV fil
   end
 
   describe PDFToCSV, '#export_data_arr_to_csv ' do
+    HEADERS_COLUMNS = ['age', 'price', 'region', 'plan_id', 'issuer_name', 'plan_name']
     before do
       @data_arr = [["0-20", "421.26", 1, 14033847, "CA Silver Indemnity 1500 80", "Aetna"],
                    ["35", "810.67", 1, 14033847, "CA Silver Indemnity 1500 80", "Aetna"],
                    ["50", "1184.82", 1, 14033847, "CA Silver Indemnity 1500 80", "Aetna"],
                    ["44", "926.76", 1, 14033847, "CA Silver Indemnity 1500 80", "Aetna"],
                   ]
-      HEADERS_COLUMNS = ['age', 'price', 'region', 'plan_id', 'issuer_name', 'plan_name']
       @s = CSV.generate do |csv|
         csv << HEADERS_COLUMNS
         @data_arr.each{ |row| csv << row }
@@ -107,7 +107,7 @@ describe 'Test process to format an unformated CSV file into a formatted CSV fil
     context 'when is call by the class instance ' do
       let(:file_name) { 'formatted_data.csv' }
       let(:file) { File.open('./tabula-aeta_sample_p1.csv')}
-      it 'should receive only one argumen ' do
+      it 'should receive only one argument ' do
         expect(@pdf_to_csv).to respond_to(:export_data_arr_to_csv).with(1).argument
       end
       it 'should generate a csv' do

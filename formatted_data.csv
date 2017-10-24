@@ -1,4 +1,7 @@
 age,price,region,plan_id,issuer_name,plan_name
+0-20,421.26,1,14033847,CA Silver Indemnity 1500 80,Aetna
+35,810.67,1,14033847,CA Silver Indemnity 1500 80,Aetna
+50,1184.82,1,14033847,CA Silver Indemnity 1500 80,Aetna
 21,663.39,1,14033847,CA Silver Indemnity 1500 80,Aetna
 36,815.98,1,14033847,CA Silver Indemnity 1500 80,Aetna
 51,1237.23,1,14033847,CA Silver Indemnity 1500 80,Aetna
